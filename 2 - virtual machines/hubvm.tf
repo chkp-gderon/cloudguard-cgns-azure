@@ -36,7 +36,7 @@ resource "azurerm_linux_virtual_machine" "hubvm" {
   resource_group_name = data.azurerm_resource_group.network_rg.name
   network_interface_ids = [azurerm_network_interface.hubvm_-nic.id]
   size                  = "Standard_DS1_v2"
-
+  user_data = filebase64("./user-data.sh")
   # user_data = base64encode(file("js-user-data.sh"))
   os_disk {
     name                 = "myOsDisk"

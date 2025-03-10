@@ -37,3 +37,14 @@ variable "piprefix_name" {
 variable "hubvm_pip_name" {
   type = string
 }
+
+variable "spokes_vms" {
+  type = list(object({
+    vnet_name = string
+    snet_name = string
+    computer_name = string
+  }))
+}
+# variable "diags" {
+#   type = string
+# }

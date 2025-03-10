@@ -13,5 +13,5 @@ data "azurerm_virtual_network" "hub_vnet" {
 data "azurerm_public_ip_prefix" "hub_vm_ip_prefix" {
   resource_group_name = var.networking_rg_name
   name = var.piprefix_name
-
 }
+

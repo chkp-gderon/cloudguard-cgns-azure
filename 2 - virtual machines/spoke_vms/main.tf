@@ -10,15 +10,6 @@ resource "azurerm_network_interface" "this" {
     }
 }
 
-# # Create storage account for boot diagnostics
-# resource "azurerm_storage_account" "my_storage_account" {
-#   name                     = "hubvm8768dkjhop1diag"
-#   location            = data.azurerm_virtual_network.this.location
-#   resource_group_name = data.azurerm_resource_group.this.name
-#   account_tier             = "Standard"
-#   account_replication_type = "LRS"
-# }
-
 # Create virtual machine
 resource "azurerm_linux_virtual_machine" "this" {
   name                  = var.computer_name

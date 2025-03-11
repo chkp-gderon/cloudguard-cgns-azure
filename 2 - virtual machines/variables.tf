@@ -45,6 +45,3 @@ variable "spokes_vms" {
     computer_name = string
   }))
 }
-# variable "diags" {
-#   type = string
-# }

@@ -10,8 +10,4 @@ module "rocky_vm" {
   vnet_name = each.value.vnet_name
   snet_name = each.value.snet_name
   computer_name = each.value.computer_name
-  # providers = {
-  #   azurerm = azurerm
-  # }
-
 }
